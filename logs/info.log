@@ -1,0 +1,3 @@
+[2019-01-17T18:49:00.217] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 59ms Thu, 17 Jan 2019 10:49:00 GMT undefined]
+[2019-01-17T20:11:57.003] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 5ms Thu, 17 Jan 2019 12:11:57 GMT undefined]
+[2019-01-17T20:13:03.455] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 1ms Thu, 17 Jan 2019 12:13:03 GMT undefined]

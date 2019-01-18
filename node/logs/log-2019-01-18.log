@@ -1,0 +1,8 @@
+[2019-01-18T11:29:52.532] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 5ms Fri, 18 Jan 2019 03:29:52 GMT undefined]
+[2019-01-18T11:33:09.605] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 5ms Fri, 18 Jan 2019 03:33:09 GMT undefined]
+[2019-01-18T11:33:41.553] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 5ms Fri, 18 Jan 2019 03:33:41 GMT undefined]
+[2019-01-18T11:35:22.011] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 5ms Fri, 18 Jan 2019 03:35:22 GMT undefined]
+[2019-01-18T11:36:13.419] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 5ms Fri, 18 Jan 2019 03:36:13 GMT undefined]
+[2019-01-18T11:36:56.655] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 8ms Fri, 18 Jan 2019 03:36:56 GMT undefined]
+[2019-01-18T11:37:32.111] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 4ms Fri, 18 Jan 2019 03:37:32 GMT {"name":"xiaoming","passwd":"123"}]
+[2019-01-18T11:53:00.241] [INFO] default - [1.1 ::ffff:100.66.179.115 POST /api/user curl/7.54.0 200 6ms Fri, 18 Jan 2019 03:53:00 GMT {"name":"xiaoming","passwd":"123"}]

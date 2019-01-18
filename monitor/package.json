@@ -1,0 +1,23 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js --harmony"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "koa": "^2.6.2",
+    "koa-static": "^5.0.0",
+    "rollup": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

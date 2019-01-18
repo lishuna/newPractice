@@ -1,0 +1,2 @@
+[2019-01-17T21:02:21.351] [INFO] default - { tokens: [ { token: ':params', replacement: [Function: replacement] } ],
+  format: '[:http-version :remote-addr :method :url :user-agent :status :response-timems :date :params]' }
