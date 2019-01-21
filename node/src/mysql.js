@@ -49,6 +49,7 @@ export const DB = {
                 }
                 console.log('The solution is: ', result);
             });
-        })
+        });
+        _connect.release();
     }
 };
