@@ -1,0 +1,91 @@
+/*
+ Navicat MySQL Data Transfer
+
+ Source Server         : 本地库
+ Source Server Type    : MySQL
+ Source Server Version : 80013
+ Source Host           : localhost:3306
+ Source Schema         : school
+
+ Target Server Type    : MySQL
+ Target Server Version : 80013
+ File Encoding         : 65001
+
+ Date: 21/01/2019 17:45:18
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for course
+-- ----------------------------
+DROP TABLE IF EXISTS `course`;
+CREATE TABLE `course` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `coursename` varchar(255) COLLATE utf8_danish_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_danish_ci;
+
+-- ----------------------------
+-- Records of course
+-- ----------------------------
+BEGIN;
+INSERT INTO `course` VALUES (1, '数学');
+INSERT INTO `course` VALUES (2, '语文');
+INSERT INTO `course` VALUES (3, '外语');
+INSERT INTO `course` VALUES (4, '历史');
+COMMIT;
+
+-- ----------------------------
+-- Table structure for score
+-- ----------------------------
+DROP TABLE IF EXISTS `score`;
+CREATE TABLE `score` (
+  `stu_id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `score` float(255,0) DEFAULT NULL,
+  PRIMARY KEY (`stu_id`,`course_id`),
+  KEY `course_id` (`course_id`),
+  CONSTRAINT `course_id` FOREIGN KEY (`course_id`) REFERENCES `course` (`id`),
+  CONSTRAINT `stu_id` FOREIGN KEY (`stu_id`) REFERENCES `student` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_danish_ci;
+
+-- ----------------------------
+-- Records of score
+-- ----------------------------
+BEGIN;
+INSERT INTO `score` VALUES (1, 1, 90);
+INSERT INTO `score` VALUES (1, 2, 80);
+INSERT INTO `score` VALUES (2, 4, 30);
+INSERT INTO `score` VALUES (3, 2, 56);
+INSERT INTO `score` VALUES (3, 3, 89);
+INSERT INTO `score` VALUES (4, 2, 79);
+COMMIT;
+
+-- ----------------------------
+-- Table structure for student
+-- ----------------------------
+DROP TABLE IF EXISTS `student`;
+CREATE TABLE `student` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_danish_ci DEFAULT NULL COMMENT '名字',
+  `age` int(11) DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_danish_ci;
+
+-- ----------------------------
+-- Records of student
+-- ----------------------------
+BEGIN;
+INSERT INTO `student` VALUES (1, '张三', 18, '1990-01-21');
+INSERT INTO `student` VALUES (2, '李四', 50, '2002-10-08');
+INSERT INTO `student` VALUES (3, '王五', 28, '1980-12-15');
+INSERT INTO `student` VALUES (4, '小明', 30, '1990-11-11');
+INSERT INTO `student` VALUES (13, '小白', 18, '2008-11-08');
+INSERT INTO `student` VALUES (14, '小白', 18, '2008-11-08');
+INSERT INTO `student` VALUES (17, '小黑', 38, '2008-11-08');
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;
