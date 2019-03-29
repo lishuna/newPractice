@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>双向绑定原理</title>
+</head>
+<body>
+  <div id="MVVM">
+    <input type="text" v-model="name">
+    <h1>{{name}}</h1>
+    <button v-on:click="show">按钮</button>
+  </div>
+</body>
+<script src="watcher.js"></script>
+<script src="mvvm.js"></script>
+<script>
+  var vm = new MVVM({
+     el: '#MVVM',
+     data: {
+         name: '小米'
+     },
+      method: {
+        show: ()=>{
+            alert('显示');
+        }
+      }
+  });
+</script>
+</html>
