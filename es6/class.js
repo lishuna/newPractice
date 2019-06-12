@@ -33,6 +33,7 @@ function ParentSub() {
     }
     console.log('调用新的子集');
 }
+
 /*
 * es5的继承写法，最优方案是使用xxx.prototype = Object.create(XXX.prototype)
 * 因为使用xxx.prototype = new XXX()会把私有属性继承过来
@@ -50,9 +51,11 @@ class Parent1 {
     constructor(name) {
         console.log(this instanceof Parent1)
         this.name = name;
+        this.weight = 108;
     }
 
     getName() {
+        console.log('my weight is:',this.weight);
         return this.name;
     }
 
@@ -61,8 +64,9 @@ class Parent1 {
     }
 }
 
-const p = new Parent1();
+const p = new Parent1('小小');
 Parent1.age();
+console.log('my name is :' + p.getName());
 
 // Parent1();
 

@@ -75,7 +75,7 @@ _name();
 * some 是数组里有一个指定值就返回true
 * every 是数组里都是指定的值才返回true
 * */
-const arr = ['a', 'b', 'c','a'];
+const arr = ['a', 'b', 'c', 'a'];
 console.log('find结果是:', arr.find(item => item == 'a'));
 console.log('some结果：', arr.some(item => item == 'd'));
 console.log('every结果：', arr.every(item => item == 'a'));
@@ -84,7 +84,9 @@ console.log('every结果：', arr.every(item => item == 'a'));
 function test() {
     console.log([].slice.call(arguments));
 }
-test(1,2,3,4,5);
+
+test(1, 2, 3, 4, 5);
+
 function sum(...rest) {
     return rest.reduce((pre, cur, index, orgin) => {
         console.log('====', index);
@@ -95,13 +97,13 @@ function sum(...rest) {
 console.log(sum(1, 2, 3, 4, 5));
 
 /**
-* reduce可以用作求和，回调函数的参数有
-*@params Pre(前一个元素),
-* @params current（当前元素）
+ * reduce可以用作求和，回调函数的参数有
+ *@params Pre(前一个元素),
+ * @params current（当前元素）
  *@params index（当前索引）
  *@params array（源数组）
-*
-* */
+ *
+ * */
 // 手写reduce
 Array.prototype.reduceNew = function (fn, initial = 0) {
     this.forEach((item, index) => {
@@ -117,3 +119,16 @@ function sum1(...rest) {
 }
 
 console.log(sum1(1, 2, 3, 4, 5));
+
+const array11 = [1, 2, 3, 4, 5];
+array11.unshift('1');
+array11.unshift('2');
+array11.shift();
+
+console.log(array11);
+
+for (var i = 0; i < 10; i++) {
+    setTimeout((function (i) {
+        console.log(i);
+    })(i));
+}

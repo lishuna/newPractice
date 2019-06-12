@@ -1,0 +1,205 @@
+{
+  "nodes": [{
+    "id": "0",
+    "isRoot": 1,
+    "level": 0,
+    "parentID": null,
+    "node": {
+      "@timestamp": "2019-05-20 16:46:12",
+      "appID": "jdb.internet.phppayui.php",
+      "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5",
+      "elapsed": 954,
+      "service": "/payui/pay/cashierCommitPayment",
+      "respCode": "0",
+      "clientIP": "100.105.85.150",
+      "spanID": "0",
+      "memberID": "604753786361092007",
+      "errorCode": "",
+      "offset": 14461509,
+      "ext": {
+        "callEndTime_i": 1558341972121,
+        "callRole_s": "s",
+        "callStartTime_i": 1558341971167,
+        "timestamp": "2019-05-20 16:46:12"
+      }
+    },
+    "children": null
+  }, {
+    "id": "0.1",
+    "isRoot": 0,
+    "level": 1,
+    "parentID": "0",
+    "node": {
+      "@timestamp": "2019-05-20 16:46:11",
+      "appID": "jdb.internet.phppayui.php",
+      "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5",
+      "elapsed": 618,
+      "service": "/mybankv21/risk/wind/tips",
+      "respCode": "0",
+      "clientIP": "100.106.222.21",
+      "spanID": "0.1",
+      "memberID": "604753786361092007",
+      "errorCode": "",
+      "offset": 14460603,
+      "ext": {
+        "callEndTime_i": 1558341971789,
+        "callRole_s": "c",
+        "callStartTime_i": 1558341971171,
+        "timestamp": "2019-05-20 16:46:11"
+      }
+    },
+    "children": null
+  }, {
+    "id": "0.2",
+    "isRoot": 0,
+    "level": 1,
+    "parentID": "0",
+    "node": {
+      "@timestamp": "2019-05-20 16:46:12",
+      "appID": "jdb.internet.phppayui.php",
+      "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5",
+      "elapsed": 329,
+      "service": "/mybankv21/auc/authorize/register",
+      "respCode": "451",
+      "clientIP": "100.106.222.21",
+      "spanID": "0.2",
+      "memberID": "604753786361092007",
+      "errorCode": "",
+      "offset": 14461051,
+      "ext": {
+        "callEndTime_i": 1558341972119,
+        "callRole_s": "c",
+        "callStartTime_i": 1558341971790,
+        "timestamp": "2019-05-20 16:46:12"
+      }
+    },
+    "children": null
+  }, {
+    "id": "0.2.1",
+    "isRoot": 0,
+    "level": 2,
+    "parentID": "0.2",
+    "node": {
+      "@timestamp": "2019-05-20 16:46:12",
+      "appID": "jdb.internet.auth.php",
+      "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5",
+      "elapsed": 323,
+      "service": "/auc/authorize/register",
+      "respCode": "0",
+      "clientIP": "100.105.81.110",
+      "spanID": "0.2.1",
+      "memberID": "",
+      "errorCode": "",
+      "offset": 17251270,
+      "ext": {
+        "callEndTime_i": 1558341972122,
+        "callRole_s": "s",
+        "callStartTime_i": 1558341971798,
+        "timestamp": "2019-05-20 16:46:12"
+      }
+    },
+    "children": null
+  }, {
+    "id": "0.2.1.1",
+    "isRoot": 0,
+    "level": 3,
+    "parentID": "0.2.1",
+    "node": {
+      "@timestamp": "2019-05-20 16:46:11",
+      "appID": "jdb.internet.auth.php",
+      "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5",
+      "elapsed": 1,
+      "service": "/mybankv21/idgen/nextId",
+      "respCode": "0",
+      "clientIP": "100.106.222.21",
+      "spanID": "0.2.1.1",
+      "memberID": "",
+      "errorCode": "",
+      "offset": 17249507,
+      "ext": {
+        "callEndTime_i": 1558341971801,
+        "callRole_s": "c",
+        "callStartTime_i": 1558341971799,
+        "timestamp": "2019-05-20 16:46:11"
+      }
+    },
+    "children": null
+  }, {
+    "id": "0.2.1.2",
+    "isRoot": 0,
+    "level": 3,
+    "parentID": "0.2.1",
+    "node": {
+      "@timestamp": "2019-05-20 16:46:12",
+      "appID": "jdb.internet.auth.php",
+      "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5",
+      "elapsed": 299,
+      "service": "/mybankv21/aeolus/wind/assess/index",
+      "respCode": "0",
+      "clientIP": "100.106.222.21",
+      "spanID": "0.2.1.2",
+      "memberID": "",
+      "errorCode": "",
+      "offset": 17249937,
+      "ext": {
+        "callEndTime_i": 1558341972101,
+        "callRole_s": "c",
+        "callStartTime_i": 1558341971802,
+        "timestamp": "2019-05-20 16:46:12"
+      }
+    },
+    "children": null
+  }, {
+    "id": "0.2.1.3",
+    "isRoot": 0,
+    "level": 3,
+    "parentID": "0.2.1",
+    "node": {
+      "@timestamp": "2019-05-20 16:46:12",
+      "appID": "jdb.internet.auth.php",
+      "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5",
+      "elapsed": 5,
+      "service": "/paygentNew/user/pwdTypeSave",
+      "respCode": "0",
+      "clientIP": "100.106.222.125",
+      "spanID": "0.2.1.3",
+      "memberID": "",
+      "errorCode": "",
+      "offset": 17250381,
+      "ext": {
+        "callEndTime_i": 1558341972113,
+        "callRole_s": "c",
+        "callStartTime_i": 1558341972108,
+        "timestamp": "2019-05-20 16:46:12"
+      }
+    },
+    "children": null
+  }, {
+    "id": "0.2.1.4",
+    "isRoot": 0,
+    "level": 3,
+    "parentID": "0.2.1",
+    "node": {
+      "@timestamp": "2019-05-20 16:46:12",
+      "appID": "jdb.internet.auth.php",
+      "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5",
+      "elapsed": 5,
+      "service": "/mybankv21/p2proute/p2proute/inner/genBankSign",
+      "respCode": "0",
+      "clientIP": "100.106.222.21",
+      "spanID": "0.2.1.4",
+      "memberID": "",
+      "errorCode": "",
+      "offset": 17250817,
+      "ext": {
+        "callEndTime_i": 1558341972119,
+        "callRole_s": "c",
+        "callStartTime_i": 1558341972114,
+        "timestamp": "2019-05-20 16:46:12"
+      }
+    },
+    "children": null
+  }],
+  "total": 8,
+  "traceID": "9BDCE15B994047FC8944DDAEAFFE0DF5"
+}
