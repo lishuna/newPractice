@@ -20,7 +20,7 @@
 
     // Flag the module as loaded
     module.l = true;
-
+    // console.dir(installedModules);
     // Return the exports of the module
     return module.exports;
   }
@@ -51,10 +51,10 @@
   };
 
   // Load entry module and return exports
-  return __webpack_require__(__webpack_require__.s = "./src/index_new.js");
+  return __webpack_require__(__webpack_require__.s = "./src/index.js");
 })
 ({
-  "./src/index_new.js": (function (module, exports, __webpack_require__) {
+  "./src/index.js": (function (module, exports, __webpack_require__) {
     // 这里直接将module.export解构赋值 实现值拷贝
     const { counter, incCounter } = __webpack_require__("./src/utils/math_commonjs.js");
     incCounter();

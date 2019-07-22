@@ -4,9 +4,13 @@
  * @version 3.1.0.0
  * @desc
  */
-// import { counter } from './utils/math.js';
+// 同步加载
+import {counter, incCounter} from './utils/math.js';
+alert(counter);
 
-import('./utils/math.js').then(({ counter }) => {
-    alert(counter);
-  }
-);
+
+// 异步加载js
+// import('./utils/math.js').then(({ counter }) => {
+//     alert(counter);
+//   }
+// );

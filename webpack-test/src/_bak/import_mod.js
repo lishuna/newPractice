@@ -31,7 +31,7 @@
 
     // 模块加载标识置为已加载
     module.l = true;
-
+    // console.dir(installedModules);
     // 返回当前模块的导出对象引用
     return module.exports;
   }
@@ -64,19 +64,20 @@
   };
 
   // 传入表达式的值为 "./src/index.js" 并return exports
-  return __webpack_require__(__webpack_require__.s = "./src/index_new.js");
+  return __webpack_require__(__webpack_require__.s = "./src/index.js");
 })
 /************************************************************************/
 ({
 
-  "./src/index_new.js":
+  "./src/index.js":
     (function (module, __webpack_exports__, __webpack_require__) {
 
       "use strict";
       // 用于区分 ES 模块和其他模块规范。
       __webpack_require__.r(__webpack_exports__);
-      // 这里返回module.export引用
+      // 这里返回module.export引用 []
       var _utils_math__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/utils/math.js");
+      // 调用Object()保证incCounter一定是一个对象，排除incCounter是null等情况直接调用方法报错
       Object(_utils_math__WEBPACK_IMPORTED_MODULE_0__["incCounter"])();
       console.log(_utils_math__WEBPACK_IMPORTED_MODULE_0__["counter"]);
     }),

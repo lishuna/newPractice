@@ -5,9 +5,11 @@
  		var moreModules = data[1];
     // 将 chunk 标记为已加载
  		var moduleId, chunkId, i = 0, resolves = [];
+ 		console.dir(installedChunks);
  		for(;i < chunkIds.length; i++) {
  			chunkId = chunkIds[i];
  			if(installedChunks[chunkId]) {
+ 				// installedChunks = [0:[resolve,rejected,promise]]
  				resolves.push(installedChunks[chunkId][0]);
  			}
  			// 将chunk置为已加载
@@ -30,6 +32,7 @@
         }
     * */
  		for(moduleId in moreModules) {
+ 			// 将path对应的代码块存储到modules上
  			if(Object.prototype.hasOwnProperty.call(moreModules, moduleId)) {
  				modules[moduleId] = moreModules[moduleId];
  			}
@@ -50,14 +53,10 @@
  	var installedChunks = {
  		"index": 0
  	};
-
-
-
    // 拼接 chunk 的请求地址
  	function jsonpScriptSrc(chunkId) {
  		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + ".js"
  	}
-
  	// The require function
  	function __webpack_require__(moduleId) {
 
@@ -81,7 +80,6 @@
  		// Return the exports of the module
  		return module.exports;
  	}
-
    // 异步加载 chunk，返回封装加载过程的 promise
  	__webpack_require__.e = function requireEnsure(chunkId) {
  		var promises = [];
@@ -89,6 +87,7 @@
  		// JSONP chunk loading for javascript
 
  		var installedChunkData = installedChunks[chunkId];
+ 		// 模块未加载过
  		if(installedChunkData !== 0) { // 0 means "already installed".
 
  			// a Promise means "currently loading".
@@ -166,7 +165,7 @@
  	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 
  	// __webpack_public_path__
- 	__webpack_require__.p = "";
+ 	__webpack_require__.p = "_bak/import()/";
 
  	// on error function for async loading
  	__webpack_require__.oe = function(err) { console.error(err); throw err; };

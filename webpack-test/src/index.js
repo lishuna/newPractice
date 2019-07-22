@@ -8,14 +8,7 @@
 const  {counter, incCounter}   = require('./utils/math_commonjs');
 // import { plus } from './utils/math';
 
+// 将counter++
 incCounter();
 console.log(counter);
-// require('./index.css');
-// document.getElementById('index').innerHTML="index";
-// $('#index').html('jquery change index');
-// console.log('hhhhhhh');
-// setTimeout(()=>{
-//   import('./utils/math').then(mathUtil => {
-//     console.log('1 + 2: ' + mathUtil.plus(1, 2));
-//   });
-// });
+
