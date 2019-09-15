@@ -30,6 +30,7 @@ let proxy = new Proxy(student, handler);
 // proxy.className = '英语';
 proxy.chengji.math = 100;
 proxy.chengji.mixn.n = 199;
+proxy.name.n = 'abc';
 console.log(student);
 
 // defineproperty

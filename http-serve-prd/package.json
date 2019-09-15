@@ -1,0 +1,19 @@
+{
+  "name": "http-serve-prd",
+  "version": "1.0.1",
+  "description": "my first http-server",
+  "main": "index.js",
+  "bin": {
+    "http-server-prd": "src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
